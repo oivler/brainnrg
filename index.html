@@ -3,18 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My Website</title>
-
     <style>
-        nav{
-            display:flex;
-            justify-content: space-between;
-            margin-right:100px;
-            margin-left:100px;
-            padding-left:100px;
-            padding-right:100px;
-        }
         body {
             font-family: Arial, sans-serif;
         }
@@ -29,6 +19,9 @@
             margin: 0;
             padding: 0;
             display: flex;
+            justify-content: space-between;
+            margin: 0 100px;
+            padding: 0 100px;
         }
 
         .nav-item {
@@ -50,6 +43,8 @@
         .dropdown {
             display: none;
             position: absolute;
+            top: 100%;
+            left: 0;
             background-color: #333;
             min-width: 160px;
             z-index: 1;
@@ -60,6 +55,9 @@
 
         .dropdown li a {
             padding: 12px 16px;
+            color: white;
+            text-decoration: none;
+            display: block;
         }
 
         .dropdown li a:hover {
@@ -69,10 +67,9 @@
         .nav-item:hover .dropdown {
             display: block;
         }
-            </style>
+    </style>
 </head>
 <body>
-
     <nav>
         <ul class="nav">
             <li class="nav-item"><a href="#">Section 1</a>
